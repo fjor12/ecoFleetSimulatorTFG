@@ -1,0 +1,124 @@
+/* ============================================
+   MAPA & CONTENEDORES LISTA
+   ============================================ */
+
+.map-panel {
+  margin-bottom: 16px;
+}
+
+.map-panel-row {
+  display: flex;
+  gap: 16px;
+}
+
+.map-panel-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.map-container {
+  height: 560px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border);
+}
+
+.contenedor-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.contenedor-item {
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  transition: background 0.2s ease;
+}
+
+.contenedor-item.selected {
+  background: #ecfdf5;
+}
+
+.contenedor-item:hover {
+  background: #f8fafc;
+}
+
+.contenedor-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+
+.contenedor-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: var(--primary);
+}
+
+.contenedor-district {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  margin-left: auto;
+}
+
+.panel-subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 10px;
+}
+
+/* Popup */
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+}
+
+.popup-content strong {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.popup-content span {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .map-panel-row {
+    flex-direction: column;
+  }
+
+  .map-container {
+    height: 400px;
+  }
+}
+
+/* ============================================
+   CREAR RUTA VIEW
+   ============================================ */
+
+.crear-ruta-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.crear-ruta-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .crear-ruta-panels {
+    grid-template-columns: 1fr;
+  }
+}

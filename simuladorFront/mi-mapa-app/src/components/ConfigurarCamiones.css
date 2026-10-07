@@ -1,0 +1,189 @@
+/* ============================================
+   CONFIGURAR CAMIONES
+   ============================================ */
+
+.camiones-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Section header */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.section-count {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  background: #f1f5f9;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Empty */
+.camiones-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border: 2px dashed #e2e8f0;
+  border-radius: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.empty-icon-sm {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+
+.camiones-empty p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Table */
+.camiones-table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: white;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+}
+
+.camiones-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.camiones-table th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+}
+
+.camiones-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  color: var(--text-primary);
+}
+
+.camiones-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.camiones-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.id-badge {
+  background: #eff6ff;
+  color: var(--primary);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.82rem;
+}
+
+.status-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.tag-active {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.tag-full {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.btn-delete {
+  background: transparent;
+  color: #ef4444;
+  border: 1px solid #fecaca;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-delete:hover {
+  background: #fef2f2;
+  border-color: #ef4444;
+}
+
+/* Form Card */
+.camiones-form-card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-heading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.btn-add {
+  width: auto;
+  padding: 12px 28px;
+}
+
+.btn-add:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
